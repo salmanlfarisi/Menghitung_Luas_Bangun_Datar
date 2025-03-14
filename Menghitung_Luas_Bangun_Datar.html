@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Luas Bangun Datar</title>
+</head>
+<body>
+
+    <h2>Menghitung Luas Bangun Datar</h2>
+
+    <label for="panjang">Panjang:</label>
+    <input type="number" id="panjang">
+    <label for="lebar">Lebar:</label>
+    <input type="number" id="lebar">
+    <button onclick="hitungLuasPersegiPanjang()">Hitung Luas Persegi Panjang</button>
+    <p id="hasilPersegiPanjang"></p>
+
+    <script>
+        function hitungLuasPersegiPanjang() {
+            let panjang = document.getElementById("panjang").value;
+            let lebar = document.getElementById("lebar").value;
+            let luas = panjang * lebar;
+            document.getElementById("hasilPersegiPanjang").innerText = "Luas: " + luas;
+        }
+    </script>
+
+</body>
+</html>
